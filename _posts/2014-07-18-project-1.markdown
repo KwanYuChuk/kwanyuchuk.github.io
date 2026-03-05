@@ -1,6 +1,6 @@
 ---
 layout: default
-modal-id: /n Carbon and Water Dynamics in A Typical Dryland Agricultural System in Southwest Western Australia 
+modal-id: Carbon and Water Dynamics in A Typical Dryland Agricultural System in Southwest Western Australia 
 date: 2025-11-07
 img: cumulative.png
 alt: image-alt
