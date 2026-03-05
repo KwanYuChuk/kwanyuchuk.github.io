@@ -1,11 +1,11 @@
 ---
 layout: default
-modal-id: 2
+modal-id: Urban heat island mapping
 date: 1015-09-01
 img: OHSA18am1.jpg
 alt: image-alt
 project-date: Sept 2025
 unit: Start Bootstrap
-category: Urabn heat island mapping
+category: Urban heat island mapping
 description: This study aimed to investigate the UHI in UWA Crawley campus from a different spatial temporal scale. UHI hot spots were identified from kriging interpolation and verified by hotspot  analysis, with James Oval and the adjacent student parking have higher temperature. Tree  canopies and shading structures help reduce UHI. The combination of land cover, NDVI, NDBI  and LST can be used to predict UHI for a larger scale. UWA is cooler during daytime and  warmer at night compared with Perth CBD in winter season. Satellite imageries show that  coastal area has lower LST than inland populated area.
 ---
