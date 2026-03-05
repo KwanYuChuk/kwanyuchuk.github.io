@@ -1,11 +1,11 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: circus.png
+date: 2025-10-01
+img: compare1430.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+project-date: Oct 2025
+unit: Start Bootstrap
+category: Outdoor thermal comfort
+description: This study utilizes urban multi-scale environmental predictor (UMEP) to examine the change of mean radiant temperatures (Tmrt) in an average summer day in the 50th percentile and extreme summer day in the 95th percentile before and after revegetation program in Lake Claremont. Tmrt sums up all shortwave and longwave radiation fluxes from six directions thus an indicator to show the thermal comfort of man when human body exposed (Lindberg et al., 2008). Radiation model SOlar and LongWave Environmental Irradiance Geometry (SOLWEIG) is used in this study to reflect the thermal comfort change in 2009 and 2018.
 ---
