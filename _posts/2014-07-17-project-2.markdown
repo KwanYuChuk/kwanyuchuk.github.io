@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: Urban heat island mapping
-date: 1015-09-01
+modal-id: 2
+date: 2025-09-01
 img: OHSA18am1.jpg
 alt: image-alt
 project-date: Sept 2025
