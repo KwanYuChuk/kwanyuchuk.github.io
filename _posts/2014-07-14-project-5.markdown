@@ -2,7 +2,7 @@
 layout: default
 modal-id: 5
 date: 2026-06-01
-img: cd.jpeg
+img: cd.jpg
 alt: image-alt
 project-date: June 2024
 unit: Start Bootstrap
