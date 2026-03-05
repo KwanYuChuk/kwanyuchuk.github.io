@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2025-11-07
-img: cabin.png
+img: cumulative.png
 alt: image-alt
 project-date: Nov 2025
 Unit: Master's thesis
