@@ -40,7 +40,7 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: www.linkedin.com/in/kwan-yu-chuk-aa88a62a8
+    url: https://www.linkedin.com/in/kwan-yu-chuk-aa88a62a8
   - title: github
     url: https://github.com/KwanYuChuk
 
@@ -49,7 +49,7 @@ address:
   - line: Wellard, Western Australia
 
 # Credits content
-# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'This website is created based on open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
