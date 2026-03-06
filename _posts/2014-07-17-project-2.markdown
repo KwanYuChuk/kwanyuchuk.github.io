@@ -2,7 +2,15 @@
 layout: default
 modal-id: 2
 date: 2025-10-01
-img: LST.jpg
+
+img: 2-cover.png
+images:
+  - 2-site.png
+  - 2-kriging.png
+  - 2-ohsa.png
+  - 2-correlation.png
+  - LST.jpg
+
 alt: image-alt
 project-date: Oct 2025
 unit: Start Bootstrap
