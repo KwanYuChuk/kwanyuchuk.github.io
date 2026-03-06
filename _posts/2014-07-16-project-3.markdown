@@ -2,7 +2,15 @@
 layout: default
 modal-id: 3
 date: 2025-10-01
-img: compare1430.jpg
+
+img: 3-cover.png
+images:
+  - 3-land-cover-change.png
+  - 3-2018input.png
+  - 3-tmrt.png
+  - 3-hazard.png
+  - 3-poi.png
+
 alt: image-alt
 project-date: Oct 2025
 unit: Start Bootstrap
