@@ -7,5 +7,5 @@ alt: image-alt
 project-date: May 2025
 unit: Start Bootstrap
 category: Advanced GIS and Spatial Analysis
-description: This study applied Multi-Criteria Decision Analysis with fuzzy logic in GIS to identify potential habitats for the critically endangered western swamp tortoise in southwest Western Australia. The main datasets considered include: distance from state roads, geomorphic wetlands, wetlands, vegetation, soil types and land use. Two locations were identified as the most favourable translocation sites because they meet habitat requirements and have sufficient area: Julimar State Forest and Gingilup Swamps Nature Reserve.
+description: This study applied Multi Criteria Decision Analysis with fuzzy logic in GIS to identify potential habitats for the critically endangered western swamp tortoise in southwest Western Australia. The main datasets considered include: distance from state roads, geomorphic wetlands, wetlands, vegetation, soil types and land use. Two locations were identified as the most favourable translocation sites because they meet habitat requirements and have sufficient area: Julimar State Forest and Gingilup Swamps Nature Reserve.
 ---
