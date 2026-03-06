@@ -3,6 +3,11 @@ layout: default
 modal-id: 6
 date: 2024-06-01
 img: fire.jpg
+images:
+  - fire.png
+  - cabin.png
+  - cake.png
+
 alt: image-alt
 project-date: June 2024
 unit: Start Bootstrap
