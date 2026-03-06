@@ -7,5 +7,5 @@ alt: image-alt
 project-date: May 2025
 unit: Start Bootstrap
 category: Advanced GIS and Spatial Analysis
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: This study applied Multi-Criteria Decision Analysis (MCDA) with fuzzy logic in GIS to identify potential habitats for the critically endangered western swamp tortoise (Pseudemydura umbrina) in southwest Western Australia. The main datasets considered include: distance from state roads (farther is better due to disturbance), geomorphic wetlands, wetlands, vegetation, soil types and land use. Two locations were identified as the most favourable translocation sites because they meet habitat requirements and have sufficient area (≥200 ha): Julimar State Forest and Gingilup Swamps Nature Reserve.
 ---
