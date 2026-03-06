@@ -21,30 +21,45 @@
 <h2>{{ post.title }}</h2>
 <hr class="star-primary">
 
-<!-- ========================= -->
-<!-- GIS Portfolio Gallery -->
-<!-- ========================= -->
+<!-- ============================ -->
+<!-- GIS Slideshow Gallery -->
+<!-- ============================ -->
 
 {% if post.images %}
-<div class="portfolio-gallery">
+
+<div class="portfolio-slideshow">
+
+<div class="portfolio-slideshow-container">
 
 {% for image in post.images %}
-<div class="portfolio-gallery-item">
+<div class="portfolio-slide">
 <img src="img/portfolio/{{ image }}"
-     class="portfolio-gallery-img"
+     class="portfolio-slide-img"
      onclick="openPortfolioLightbox(this)">
 </div>
 {% endfor %}
 
 </div>
 
+<!-- Navigation dots -->
+<div class="portfolio-dots">
+{% for image in post.images %}
+<span class="portfolio-dot"
+      onclick="currentPortfolioSlide({{ forloop.index }})"></span>
+{% endfor %}
+</div>
+
+</div>
+
 {% else %}
+
 <img src="img/portfolio/{{ post.img }}"
-     class="portfolio-gallery-img"
+     class="portfolio-slide-img"
      onclick="openPortfolioLightbox(this)">
+
 {% endif %}
 
-<!-- ========================= -->
+<!-- ============================ -->
 
 {% if post.description %}
 <p>{{ post.description }}</p>
