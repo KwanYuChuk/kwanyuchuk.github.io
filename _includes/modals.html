@@ -3,6 +3,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
+
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl"></div>
@@ -12,18 +13,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
+
           <div class="modal-body">
 
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
 
-            <!-- Multiple images support -->
+            <!-- Image gallery -->
             {% if post.images %}
+            <div class="portfolio-gallery">
               {% for image in post.images %}
-                <img src="img/portfolio/{{ image }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+              <img src="img/portfolio/{{ image }}" class="portfolio-gallery-img" alt="{{ post.alt }}">
               {% endfor %}
+            </div>
             {% else %}
-              <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% endif %}
 
             {% if post.description %}
@@ -31,6 +35,7 @@
             {% endif %}
 
             <ul class="list-inline item-details">
+
               {% if post.client %}
               <li>Client:
                 <strong>{{ post.client }}</strong>
@@ -48,6 +53,7 @@
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
+
             </ul>
 
             <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -55,6 +61,7 @@
             </button>
 
           </div>
+
         </div>
       </div>
     </div>
