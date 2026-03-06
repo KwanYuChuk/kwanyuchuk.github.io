@@ -2,6 +2,7 @@
 layout: default
 modal-id: 6
 date: 2024-06-01
+
 img: fire.jpg
 images:
   - workflow6.png
