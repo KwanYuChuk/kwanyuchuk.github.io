@@ -59,9 +59,9 @@
   </a>
 </div>
 
-<!-- ============================== -->
+<!-- ============================= -->
 <!-- GIS Portfolio Lightbox Script -->
-<!-- ============================== -->
+<!-- ============================= -->
 
 <script>
 function openPortfolioLightbox(imgElement){
@@ -96,4 +96,47 @@ function openPortfolioLightbox(imgElement){
 
     document.body.appendChild(overlay);
 }
+
+/* ============================= */
+/* Slideshow Control */
+/* ============================= */
+
+let portfolioSlideIndex = 1;
+
+function showPortfolioSlide(n){
+
+    let slides = document.getElementsByClassName("portfolio-slide");
+    let dots = document.getElementsByClassName("portfolio-dot");
+
+    if(slides.length === 0) return;
+
+    if(n > slides.length) portfolioSlideIndex = 1;
+    if(n < 1) portfolioSlideIndex = slides.length;
+
+    for(let i=0;i<slides.length;i++){
+        slides[i].style.display = "none";
+
+        if(dots[i]){
+            dots[i].classList.remove("active");
+        }
+    }
+
+    slides[portfolioSlideIndex-1].style.display = "block";
+
+    if(dots[portfolioSlideIndex-1]){
+        dots[portfolioSlideIndex-1].classList.add("active");
+    }
+}
+
+function currentPortfolioSlide(n){
+    portfolioSlideIndex = n;
+    showPortfolioSlide(n);
+}
+
+/* ⭐ 初始化 slideshow */
+document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+        showPortfolioSlide(1);
+    }, 200);
+});
 </script>
