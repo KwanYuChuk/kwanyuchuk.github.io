@@ -29,8 +29,6 @@
 
 <div class="portfolio-slideshow">
 
-<div class="portfolio-slideshow-container">
-
 {% for image in post.images %}
 <div class="portfolio-slide">
 <img src="img/portfolio/{{ image }}"
@@ -47,8 +45,6 @@
 <span class="portfolio-dot"
       onclick="currentPortfolioSlide({{ forloop.index }})"></span>
 {% endfor %}
-</div>
-
 </div>
 
 {% else %}
@@ -68,21 +64,15 @@
 <ul class="list-inline item-details">
 
 {% if post.client %}
-<li>Client:
-<strong>{{ post.client }}</strong>
-</li>
+<li>Client: <strong>{{ post.client }}</strong></li>
 {% endif %}
 
 {% if post.project-date %}
-<li>Date:
-<strong>{{ post.project-date }}</strong>
-</li>
+<li>Date: <strong>{{ post.project-date }}</strong></li>
 {% endif %}
 
 {% if post.category %}
-<li>Service:
-<strong>{{ post.category }}</strong>
-</li>
+<li>Service: <strong>{{ post.category }}</strong></li>
 {% endif %}
 
 </ul>
