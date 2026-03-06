@@ -4,9 +4,11 @@ modal-id: 6
 date: 2024-06-01
 img: fire.jpg
 images:
-  - fire.png
-  - cabin.png
-  - cake.png
+  - workflow6.png
+  - burnt.png
+  - nbr.png
+  - rri.png
+  - recovery.jpg
 
 alt: image-alt
 project-date: June 2024
