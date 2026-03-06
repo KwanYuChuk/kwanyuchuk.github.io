@@ -46,3 +46,42 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 </div>
+
+<!-- GIS Portfolio Lightbox -->
+<script>
+function openPortfolioLightbox(imgElement){
+
+    // Create overlay
+    let overlay = document.createElement("div");
+
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,0.9)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.zIndex = "99999";
+    overlay.style.cursor = "zoom-out";
+
+    // Create image
+    let img = document.createElement("img");
+
+    img.src = imgElement.src;
+    img.style.maxWidth = "90%";
+    img.style.maxHeight = "90%";
+    img.style.borderRadius = "8px";
+    img.style.boxShadow = "0 0 30px rgba(0,0,0,0.5)";
+
+    overlay.appendChild(img);
+
+    // Close when click overlay
+    overlay.onclick = function(){
+        document.body.removeChild(overlay);
+    };
+
+    document.body.appendChild(overlay);
+}
+</script>
