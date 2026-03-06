@@ -7,5 +7,5 @@ alt: image-alt
 project-date: June 2024
 unit: Start Bootstrap
 category: Assessing Environmental Quality
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: Ashfield Flats Reserve is the largest existing river-flat in Perth Metropolitan city. It is listed as a threated ecological community under Environmental Protection and Biodiversity Conservation. Ashfield flat is a habitat to many halophytes (D. G. McGrath, n.d.). However, this reserve faces threats from various pollutants in sediment and water. These pollutants have significant impacts on flora and fauna in Ashfield Flats. This study (1) Investigated the level and distribution of potential contaminants from sediment and water, evaluate contaminants with Australian guidelines; and  (2) Examined possible sources of contaminants, taking into consideration the surrounding environment and historical factors.  
 ---
