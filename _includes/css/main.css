@@ -483,40 +483,36 @@ footer .footer-below {
     -webkit-transform: translateZ(0);
 }
 
-/* ===============================
-   Portfolio Horizontal Gallery
-   =============================== */
-
-.portfolio-gallery {
-    display: flex;
-    overflow-x: auto;
-    gap: 25px;
-    padding-bottom: 15px;
-    scroll-behavior: smooth;
+.portfolio-slideshow {
+    width: 100%;
+    text-align: center;
 }
 
-.portfolio-gallery-item {
-    flex: 0 0 auto;
+.portfolio-slide {
+    display: none;
 }
 
-.portfolio-gallery-img {
-    height: 320px;
-    width: auto;
-    cursor: zoom-in;
+.portfolio-slide-img {
+    max-width: 95%;
+    height: auto;
     border-radius: 8px;
-    transition: transform 0.25s ease;
+    cursor: zoom-in;
 }
 
-.portfolio-gallery-img:hover {
-    transform: scale(1.03);
+.portfolio-dots {
+    margin-top: 20px;
 }
 
-/* Hide scrollbar */
-.portfolio-gallery::-webkit-scrollbar {
-    height: 8px;
+.portfolio-dot {
+    height: 12px;
+    width: 12px;
+    margin: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.portfolio-gallery::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
+.portfolio-dot.active {
+    background-color: #333;
 }
