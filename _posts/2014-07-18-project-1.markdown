@@ -2,7 +2,15 @@
 layout: default
 modal-id: 1 
 date: 2025-11-07
-img: cumulative.png
+
+img: 1-cover.png
+images:
+  - 1-site.png
+  - 1-pixels.png
+  - 1-carbon-water-flux.png
+  - 1-rf.png
+  - 1-satellite.png
+
 alt: image-alt
 project-date: Nov 2025
 Unit: Master's thesis
