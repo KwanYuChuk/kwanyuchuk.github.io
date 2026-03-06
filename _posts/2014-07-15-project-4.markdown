@@ -3,6 +3,14 @@ layout: default
 modal-id: 4
 date: 2025-05-01
 img: Existing_habitat.jpg
+images:
+  - 4-sdm.png
+  - 4-geostatistics.png
+  - 4-hotspot.png
+  - 4-space-time.png
+  - 4-regression.png
+  - 4-hydro.png
+  - 4-mca.png
 alt: image-alt
 project-date: May 2025
 unit: Start Bootstrap
