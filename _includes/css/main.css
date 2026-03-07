@@ -534,7 +534,4 @@ footer .footer-below {
     color: #{{ site.color.primary }};
 }
 
-section.success {
-    color: #fff;
-    background: #{{ site.color.primary }};
-}
+
