@@ -185,4 +185,17 @@ button.classList.add("active");
 
 }
 
+function showRec(n){
+
+let slides = document.querySelectorAll(".rec-slide");
+let dots = document.querySelectorAll(".rec-dot");
+
+slides.forEach(s => s.classList.remove("active"));
+dots.forEach(d => d.classList.remove("active"));
+
+slides[n-1].classList.add("active");
+dots[n-1].classList.add("active");
+
+}
+
 </script>
