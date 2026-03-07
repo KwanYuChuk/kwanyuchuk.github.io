@@ -60,7 +60,7 @@
 </div>
 
 <!-- ============================= -->
-<!-- GIS Portfolio Lightbox Engine -->
+<!-- Portfolio & Experience Scripts -->
 <!-- ============================= -->
 
 <script>
@@ -101,8 +101,9 @@ function openPortfolioLightbox(imgElement){
     document.body.appendChild(overlay);
 }
 
+
 /* =============================
-Slideshow Engine (Modal Scoped)
+Portfolio Slideshow
 ============================= */
 
 function showPortfolioSlideByModal(modalId, n){
@@ -130,8 +131,9 @@ function showPortfolioSlideByModal(modalId, n){
     }
 }
 
+
 /* =============================
-Initialize Slideshow
+Initialize Portfolio Slideshow
 ============================= */
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -145,5 +147,38 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
+
+
+/* =============================
+Experience Tab Switch
+============================= */
+
+function showExp(type, button){
+
+    let sections = ["study","work","research"];
+
+    sections.forEach(function(sec){
+        let el = document.getElementById("exp-"+sec);
+        if(el){
+            el.style.display = "none";
+        }
+    });
+
+    let active = document.getElementById("exp-"+type);
+    if(active){
+        active.style.display = "block";
+    }
+
+    let tabs = document.querySelectorAll(".exp-tab");
+
+    tabs.forEach(function(tab){
+        tab.classList.remove("active");
+    });
+
+    if(button){
+        button.classList.add("active");
+    }
+
+}
 
 </script>
