@@ -60,10 +60,15 @@
 </div>
 
 <!-- ============================= -->
-<!-- GIS Portfolio Lightbox Script -->
+<!-- GIS Portfolio Lightbox Engine -->
 <!-- ============================= -->
 
 <script>
+
+/* =============================
+Lightbox Zoom
+============================= */
+
 function openPortfolioLightbox(imgElement){
 
     let overlay = document.createElement("div");
@@ -73,7 +78,7 @@ function openPortfolioLightbox(imgElement){
     overlay.style.left = "0";
     overlay.style.width = "100%";
     overlay.style.height = "100%";
-    overlay.style.background = "rgba(0,0,0,0.9)";
+    overlay.style.background = "rgba(0,0,0,0.92)";
     overlay.style.display = "flex";
     overlay.style.alignItems = "center";
     overlay.style.justifyContent = "center";
@@ -86,7 +91,6 @@ function openPortfolioLightbox(imgElement){
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
     img.style.borderRadius = "8px";
-    img.style.boxShadow = "0 0 30px rgba(0,0,0,0.5)";
 
     overlay.appendChild(img);
 
@@ -97,46 +101,49 @@ function openPortfolioLightbox(imgElement){
     document.body.appendChild(overlay);
 }
 
-/* ============================= */
-/* Slideshow Control */
-/* ============================= */
+/* =============================
+Slideshow Engine (Modal Scoped)
+============================= */
 
-let portfolioSlideIndex = 1;
+function showPortfolioSlideByModal(modalId, n){
 
-function showPortfolioSlide(n){
+    let slides = document.querySelectorAll(
+        ".portfolio-slide[data-modal='" + modalId + "']"
+    );
 
-    let slides = document.getElementsByClassName("portfolio-slide");
-    let dots = document.getElementsByClassName("portfolio-dot");
+    let dots = document.querySelectorAll(
+        ".portfolio-dot[data-modal='" + modalId + "']"
+    );
 
     if(slides.length === 0) return;
 
-    if(n > slides.length) portfolioSlideIndex = 1;
-    if(n < 1) portfolioSlideIndex = slides.length;
+    if(n > slides.length) n = 1;
+    if(n < 1) n = slides.length;
 
-    for(let i=0;i<slides.length;i++){
-        slides[i].style.display = "none";
+    slides.forEach(s => s.style.display = "none");
+    dots.forEach(d => d.classList.remove("active"));
 
-        if(dots[i]){
-            dots[i].classList.remove("active");
-        }
-    }
+    slides[n-1].style.display = "block";
 
-    slides[portfolioSlideIndex-1].style.display = "block";
-
-    if(dots[portfolioSlideIndex-1]){
-        dots[portfolioSlideIndex-1].classList.add("active");
+    if(dots[n-1]){
+        dots[n-1].classList.add("active");
     }
 }
 
-function currentPortfolioSlide(n){
-    portfolioSlideIndex = n;
-    showPortfolioSlide(n);
-}
+/* =============================
+Initialize Slideshow
+============================= */
 
-/* ⭐ 初始化 slideshow */
 document.addEventListener("DOMContentLoaded", function(){
-    setTimeout(function(){
-        showPortfolioSlide(1);
-    }, 200);
+
+    document.querySelectorAll(".portfolio-slideshow").forEach(function(el){
+
+        let modalId = el.dataset.modal;
+
+        showPortfolioSlideByModal(modalId, 1);
+
+    });
+
 });
+
 </script>
