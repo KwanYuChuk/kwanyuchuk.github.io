@@ -533,3 +533,8 @@ footer .footer-below {
     font-weight: 700;
     color: #{{ site.color.primary }};
 }
+
+#about {
+    background: transparent !important;
+    color: #333;
+}
