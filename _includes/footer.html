@@ -1,63 +1,64 @@
 <!-- Footer -->
 <footer class="text-center">
 
-  <div class="footer-above">
-    <div class="container">
-      <div class="row">
+<div class="footer-above">
+<div class="container">
+<div class="row">
 
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.location }}</h3>
-          <p>
-            {% for adress in site.address %}
-            {{ adress.line }} <br>
-            {% endfor %}
-          </p>
-        </div>
+<div class="footer-col col-md-4">
+<h3>{{ site.footer.location }}</h3>
+<p>
+{% for adress in site.address %}
+{{ adress.line }} <br>
+{% endfor %}
+</p>
+</div>
 
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.social }}</h3>
+<div class="footer-col col-md-4">
+<h3>{{ site.footer.social }}</h3>
 
-          <ul class="list-inline">
-            {% for network in site.social %}
-            <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline">
-                <i class="fa-brands fa-fw fa-{{ network.title }}"></i>
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
+<ul class="list-inline">
+{% for network in site.social %}
+<li>
+<a href="{{ network.url }}" class="btn-social btn-outline">
+<i class="fa-brands fa-fw fa-{{ network.title }}"></i>
+</a>
+</li>
+{% endfor %}
+</ul>
 
-        </div>
+</div>
 
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.credits }}</h3>
-          <p>{{ site.credits }}</p>
-        </div>
+<div class="footer-col col-md-4">
+<h3>{{ site.footer.credits }}</h3>
+<p>{{ site.credits }}</p>
+</div>
 
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 
-  <div class="footer-below">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          Copyright &copy;
-          {{ site.footer.copyright }}
-          20{{ site.time | date: '%y' }}
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="footer-below">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+Copyright &copy;
+{{ site.footer.copyright }}
+20{{ site.time | date: '%y' }}
+</div>
+</div>
+</div>
+</div>
 
 </footer>
 
 <!-- Scroll Top Button -->
 <div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
+<a class="btn btn-primary" href="#page-top">
+<i class="fa fa-chevron-up"></i>
+</a>
 </div>
+
 
 <!-- ============================= -->
 <!-- Portfolio & Experience Scripts -->
@@ -71,34 +72,34 @@ Lightbox Zoom
 
 function openPortfolioLightbox(imgElement){
 
-    let overlay = document.createElement("div");
+let overlay = document.createElement("div");
 
-    overlay.style.position = "fixed";
-    overlay.style.top = "0";
-    overlay.style.left = "0";
-    overlay.style.width = "100%";
-    overlay.style.height = "100%";
-    overlay.style.background = "rgba(0,0,0,0.92)";
-    overlay.style.display = "flex";
-    overlay.style.alignItems = "center";
-    overlay.style.justifyContent = "center";
-    overlay.style.zIndex = "99999";
-    overlay.style.cursor = "zoom-out";
+overlay.style.position = "fixed";
+overlay.style.top = "0";
+overlay.style.left = "0";
+overlay.style.width = "100%";
+overlay.style.height = "100%";
+overlay.style.background = "rgba(0,0,0,0.92)";
+overlay.style.display = "flex";
+overlay.style.alignItems = "center";
+overlay.style.justifyContent = "center";
+overlay.style.zIndex = "99999";
+overlay.style.cursor = "zoom-out";
 
-    let img = document.createElement("img");
+let img = document.createElement("img");
 
-    img.src = imgElement.src;
-    img.style.maxWidth = "90%";
-    img.style.maxHeight = "90%";
-    img.style.borderRadius = "8px";
+img.src = imgElement.src;
+img.style.maxWidth = "90%";
+img.style.maxHeight = "90%";
+img.style.borderRadius = "8px";
 
-    overlay.appendChild(img);
+overlay.appendChild(img);
 
-    overlay.onclick = function(){
-        document.body.removeChild(overlay);
-    };
+overlay.onclick = function(){
+document.body.removeChild(overlay);
+};
 
-    document.body.appendChild(overlay);
+document.body.appendChild(overlay);
 }
 
 
@@ -108,27 +109,27 @@ Portfolio Slideshow
 
 function showPortfolioSlideByModal(modalId, n){
 
-    let slides = document.querySelectorAll(
-        ".portfolio-slide[data-modal='" + modalId + "']"
-    );
+let slides = document.querySelectorAll(
+".portfolio-slide[data-modal='" + modalId + "']"
+);
 
-    let dots = document.querySelectorAll(
-        ".portfolio-dot[data-modal='" + modalId + "']"
-    );
+let dots = document.querySelectorAll(
+".portfolio-dot[data-modal='" + modalId + "']"
+);
 
-    if(slides.length === 0) return;
+if(slides.length === 0) return;
 
-    if(n > slides.length) n = 1;
-    if(n < 1) n = slides.length;
+if(n > slides.length) n = 1;
+if(n < 1) n = slides.length;
 
-    slides.forEach(s => s.style.display = "none");
-    dots.forEach(d => d.classList.remove("active"));
+slides.forEach(s => s.style.display = "none");
+dots.forEach(d => d.classList.remove("active"));
 
-    slides[n-1].style.display = "block";
+slides[n-1].style.display = "block";
 
-    if(dots[n-1]){
-        dots[n-1].classList.add("active");
-    }
+if(dots[n-1]){
+dots[n-1].classList.add("active");
+}
 }
 
 
@@ -138,13 +139,13 @@ Initialize Portfolio Slideshow
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    document.querySelectorAll(".portfolio-slideshow").forEach(function(el){
+document.querySelectorAll(".portfolio-slideshow").forEach(function(el){
 
-        let modalId = el.dataset.modal;
+let modalId = el.dataset.modal;
 
-        showPortfolioSlideByModal(modalId, 1);
+showPortfolioSlideByModal(modalId, 1);
 
-    });
+});
 
 });
 
@@ -155,30 +156,33 @@ Experience Tab Switch
 
 function showExp(type, button){
 
-    const sections = ["study","award","work","volunteer","research"];
+const sections = ["study","award","work","volunteer","research"];
 
-    // 隱藏全部
-    sections.forEach(function(sec){
-        let el = document.getElementById("exp-" + sec);
-        if(el){
-            el.style.display = "none";
-        }
-    });
-
-    // 顯示當前
-    let activeSection = document.getElementById("exp-" + type);
-    if(activeSection){
-        activeSection.style.display = "block";
-    }
-
-    // 更新 tab 狀態
-    let tabs = document.querySelectorAll(".exp-tab");
-    tabs.forEach(function(tab){
-        tab.classList.remove("active");
-    });
-
-    // 設定 active
-    if(button){
-        button.classList.add("active");
-    }
+// Hide all
+sections.forEach(function(sec){
+let el = document.getElementById("exp-" + sec);
+if(el){
+el.style.display = "none";
 }
+});
+
+// Show current
+let activeSection = document.getElementById("exp-" + type);
+if(activeSection){
+activeSection.style.display = "block";
+}
+
+// Update tab active state
+let tabs = document.querySelectorAll(".exp-tab");
+
+tabs.forEach(function(tab){
+tab.classList.remove("active");
+});
+
+if(button){
+button.classList.add("active");
+}
+
+}
+
+</script>
