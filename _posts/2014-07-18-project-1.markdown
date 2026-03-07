@@ -1,6 +1,7 @@
 ---
 layout: default
-modal-id: 1-Carbon 
+modal-id: carbon-analysis
+title: Carbon Analysis
 date: 2025-11-07
 
 img: 1-cover.png
