@@ -1,11 +1,17 @@
 # Site settings
-title: Kwan Yu Chuk
+title: Kwan Yu Chuk | Spatial Data Science Portfolio
+
 email: kwanyu.chuk@gmail.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "GIS Analyst"
-keywords: "GIS Analyst"
-skills: "GIS Specialist - Geospatial Enthusiast"
-meta_author: Chuk Kwan Yu 
+
+url: https://kwanyuchuk.github.io
+
+description: Portfolio of Kwan Yu Chuk, geospatial data science enthusiast specialising in GIS, remote sensing, spatial analysis, and environmental modelling. Master of Environmental Science (Sensing and Spatial Data Science), University of Western Australia.
+
+keywords: Kwan Yu Chuk, GIS, spatial data science, geospatial analysis, remote sensing, portfolio, geospatial modelling
+
+skills: GIS Specialist - Geospatial Enthusiast
+
+meta_author: Kwan Yu Chuk
 
 # Google webmaster tools
 google_verify:
