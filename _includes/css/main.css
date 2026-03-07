@@ -613,3 +613,22 @@ margin-bottom:20px;
 font-size:16px;
 line-height:1.8;
 }
+
+#recommendation {
+    padding: 100px 0;
+}
+
+.recommendation-box {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.recommendation-box h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
