@@ -614,21 +614,43 @@ font-size:16px;
 line-height:1.8;
 }
 
-#recommendation {
-    padding: 100px 0;
+#recommendation{
+padding:100px 0;
 }
 
-.recommendation-box {
-    background: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.8;
+.recommendation-card{
+background:#ffffff;
+padding:35px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+margin-bottom:30px;
+position:relative;
+transition:all 0.25s ease;
 }
 
-.recommendation-box h4 {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 600;
+.recommendation-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.quote-icon{
+font-size:32px;
+color:#18bc9c;
+margin-bottom:15px;
+}
+
+.recommendation-card p{
+font-size:16px;
+line-height:1.8;
+color:#444;
+}
+
+.recommendation-card h4{
+margin-top:20px;
+font-weight:700;
+}
+
+.recommendation-role{
+font-size:14px;
+color:#777;
 }
