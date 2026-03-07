@@ -1,6 +1,7 @@
 ---
 layout: default
-modal-id: 3
+modal-id: outdoor-thermal-comfort-before-and-after-revegetation
+title: Outdoor Thermal Comfort Before and After Revegetation
 date: 2025-10-01
 
 img: 3-cover.png
@@ -14,6 +15,6 @@ images:
 alt: image-alt
 project-date: Oct 2025
 unit: Start Bootstrap
-category: Outdoor thermal comfort
+category: Outdoor Thermal Comfort | UMEP | Microclimate
 description: This study utilizes urban multi-scale environmental predictor (UMEP) to examine the change of mean radiant temperatures (Tmrt) in an average summer day in the 50th percentile and extreme summer day in the 95th percentile before and after revegetation program in Lake Claremont. Tmrt sums up all shortwave and longwave radiation fluxes from six directions thus an indicator to show the thermal comfort of man when human body exposed (Lindberg et al., 2008). Radiation model SOlar and LongWave Environmental Irradiance Geometry (SOLWEIG) is used in this study to reflect the thermal comfort change in 2009 and 2018.
 ---
