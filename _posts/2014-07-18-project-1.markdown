@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: carbon-analysis
-title: Carbon Analysis
+modal-id: carbon-and-water-dynamics-in-a-typical-dryland-agricultural-system-in-southwest-western-australia
+title: Carbon and Water Dynamics in a Typical Dryland Agricultural System in Southwest Western Australia 
 date: 2025-11-07
 
 img: 1-cover.png
