@@ -614,39 +614,63 @@ font-size:16px;
 line-height:1.8;
 }
 
+#recommendation{
+padding:100px 0;
+}
+
 .recommendation-slider{
-max-width:700px;
+max-width:750px;
 margin:0 auto;
-text-align:center;
 }
 
 .rec-slide{
 display:none;
-font-size:18px;
-line-height:1.8;
 }
 
 .rec-slide.active{
 display:block;
 }
 
-.rec-slide h4{
-margin-top:20px;
+.recommendation-card{
+background:#ffffff;
+padding:40px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+text-align:center;
+min-height:260px;
+}
+
+.quote-icon{
+font-size:32px;
+color:#18bc9c;
+margin-bottom:15px;
+}
+
+.recommendation-card p{
+font-size:17px;
+line-height:1.8;
+color:#444;
+}
+
+.recommendation-card h4{
+margin-top:25px;
 font-weight:700;
 }
 
-.rec-slide span{
+.recommendation-card span{
+display:block;
+margin-top:5px;
 font-size:14px;
 color:#777;
 }
 
 .rec-dots{
-margin-top:20px;
+margin-top:25px;
 }
 
 .rec-dot{
-height:10px;
-width:10px;
+height:12px;
+width:12px;
 margin:5px;
 background:#ccc;
 display:inline-block;
