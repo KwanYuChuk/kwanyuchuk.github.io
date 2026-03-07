@@ -537,30 +537,41 @@ footer .footer-below {
 padding:100px 0;
 }
 
+/* Experience Tabs */
+
 .experience-tabs{
-margin-bottom:40px;
+margin-top:40px;
+margin-bottom:50px;
 }
 
 .exp-tab{
-border:none;
 background:none;
-font-size:18px;
-margin:0 20px;
-padding:10px 10px;
+border:none;
+font-size:22px;
+font-weight:700;
+margin:0 30px;
 cursor:pointer;
-font-weight:600;
-color:#666;
+color:#444;
+transition:all 0.2s ease;
+}
+
+.exp-tab:hover{
+color:#000;
+transform:scale(1.05);
 }
 
 .exp-tab.active{
 color:#000;
-border-bottom:3px solid #000;
 }
 
 .exp-content{
-max-width:800px;
+max-width:900px;
 margin:auto;
-font-size:16px;
+font-size:18px;
 line-height:1.8;
 text-align:left;
+}
+
+.exp-content p{
+margin-bottom:25px;
 }
