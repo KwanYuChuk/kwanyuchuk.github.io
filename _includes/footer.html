@@ -153,11 +153,11 @@ document.addEventListener("DOMContentLoaded", function(){
 Experience Tab Switch
 ============================= */
 
-function showExp(type, button){
+function showExp(type){
 
     const sections = ["study","award","work","volunteer","research"];
 
-    // 隱藏所有內容
+    // 隱藏全部 section
     sections.forEach(function(sec){
         const el = document.getElementById("exp-"+sec);
         if(el){
@@ -165,20 +165,22 @@ function showExp(type, button){
         }
     });
 
-    // 顯示當前內容
-    const activeSection = document.getElementById("exp-"+type);
-    if(activeSection){
-        activeSection.style.display = "block";
+    // 顯示當前 section
+    const active = document.getElementById("exp-"+type);
+    if(active){
+        active.style.display = "block";
     }
 
     // 更新 tab 狀態
     const tabs = document.querySelectorAll(".exp-tab");
+
     tabs.forEach(function(tab){
         tab.classList.remove("active");
     });
 
-    if(button){
-        button.classList.add("active");
+    // 取得被點擊的 tab
+    if(event && event.currentTarget){
+        event.currentTarget.classList.add("active");
     }
 
 }
