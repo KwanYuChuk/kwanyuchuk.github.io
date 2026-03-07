@@ -528,3 +528,8 @@ footer .footer-below {
     font-size: 14px;
     color: #777;
 }
+
+.highlight-text{
+    font-weight: 700;
+    color: #{{ site.color.primary }};
+}
