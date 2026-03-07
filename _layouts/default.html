@@ -3,9 +3,14 @@
 {% include head.html %}
 
 <body id="page-top" class="index">
+
   {% include nav.html %}
   {% include header.html %}
+
   {% include portfolio_grid.html %}
+
+  {% include experience.html %}
+
   {% include about.html %}
 
   {% if site.contact == "static" %}
@@ -19,6 +24,7 @@
   {% include footer.html %}
   {% include modals.html %}
   {% include js.html %}
+
 </body>
 
 </html>
