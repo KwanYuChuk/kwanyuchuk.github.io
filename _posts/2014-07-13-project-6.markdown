@@ -15,6 +15,6 @@ alt: image-alt
 project-date: June 2024
 unit: Start Bootstrap
 category: Bushfire and vegetation recovery analysis
-description: In this project, remotely sensed data is used to analyze the extent of burnt area in 2020 Muli forest fire. Short-term post fire vegetation recovery is assessed in the initial four years after forest fire. Result shows the fire area is 128.8 square kilometers with 87.4% agreement. Vegetation recoveries rapidly in the first year following the fire disturbance and tends to be steady from third year onwards. Study forest fire and postfire vegetation recovery are essential for effective forest resource management. SSee more details at <a href="https://storymaps.arcgis.com/stories/29775ea7a6c9436e9900b7225ee625f2" target="_blank">bushfire storymap</a>..
+description: In this project, remotely sensed data is used to analyze the extent of burnt area in 2020 Muli forest fire. Short-term post fire vegetation recovery is assessed in the initial four years after forest fire. Result shows the fire area is 128.8 square kilometers with 87.4% agreement. Vegetation recoveries rapidly in the first year following the fire disturbance and tends to be steady from third year onwards. Study forest fire and postfire vegetation recovery are essential for effective forest resource management. See more details at <a href="https://storymaps.arcgis.com/stories/29775ea7a6c9436e9900b7225ee625f2" target="_blank">bushfire storymap</a>..
 
 ---
