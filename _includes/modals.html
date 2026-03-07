@@ -1,5 +1,6 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
+
 <div class="portfolio-modal modal fade"
      id="portfolioModal-{{ post.modal-id }}"
      tabindex="-1"
@@ -27,13 +28,17 @@
 
 {% if post.images %}
 
-<div class="portfolio-slideshow">
+<div class="portfolio-slideshow"
+     data-modal="{{ post.modal-id }}">
 
 {% for image in post.images %}
-<div class="portfolio-slide">
+<div class="portfolio-slide"
+     data-modal="{{ post.modal-id }}">
+
 <img src="img/portfolio/{{ image }}"
      class="portfolio-slide-img"
      onclick="openPortfolioLightbox(this)">
+
 </div>
 {% endfor %}
 
@@ -41,10 +46,14 @@
 
 <!-- Navigation dots -->
 <div class="portfolio-dots">
+
 {% for image in post.images %}
 <span class="portfolio-dot"
-      onclick="currentPortfolioSlide({{ forloop.index }})"></span>
+      data-modal="{{ post.modal-id }}"
+      onclick="showPortfolioSlideByModal('{{ post.modal-id }}', {{ forloop.index }})">
+</span>
 {% endfor %}
+
 </div>
 
 {% else %}
@@ -88,4 +97,5 @@
 
 </div>
 </div>
+
 {% endfor %}
