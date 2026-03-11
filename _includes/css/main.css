@@ -682,3 +682,8 @@ cursor:pointer;
 .rec-dot.active{
 background:#18bc9c;
 }
+
+.storymap-link{
+color:#007BFF;
+text-decoration:underline;
+}
